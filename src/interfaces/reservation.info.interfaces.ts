@@ -1,4 +1,4 @@
-import { Model } from 'Sequelize';
+import { Model } from 'sequelize';
 
 export interface ReservationInfoAttributes {
     id?: string;

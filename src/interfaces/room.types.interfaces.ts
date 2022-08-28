@@ -1,4 +1,4 @@
-import { Model } from 'Sequelize';
+import { Model } from 'sequelize';
 
 export interface RoomTypeAttributes {
     id?: string;
@@ -10,4 +10,3 @@ export interface RoomTypeAttributes {
 export interface RoomTypeInstance
     extends Model<RoomTypeAttributes>,
     RoomTypeAttributes { }
-    
