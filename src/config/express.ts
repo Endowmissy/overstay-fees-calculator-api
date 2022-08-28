@@ -1,7 +1,8 @@
 import express, { json, urlencoded, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import constants from '../utils/constants';
+import constants from '../utils/constants'
+import logger from '../config/logger'
 
 const app = express();
 const {
@@ -15,6 +16,8 @@ app.use(urlencoded({ extended: false }));
 // Use helmet to secure Express headers
 app.use(helmet());
 app.disable('x-powered-by');
+
+global.logger = logger;
 
 app.use(cors({origin: '*', // allow to server to accept request from different origin
 methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
