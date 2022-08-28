@@ -5,6 +5,4 @@ export default {
     WELCOME: 'Welcome to Blossom Hotel Overstay Fees Calculator',
     v1: '/api/v1',
     DB_ERROR: 'A database error occurred',
-    MODULE_ERROR: 'A module error occurred',
-    
 };
