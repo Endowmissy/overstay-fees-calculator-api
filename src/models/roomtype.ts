@@ -20,7 +20,7 @@ const RoomType = sequelize.define<RoomTypeInstance> (
     }
   },
   {
-    tableName: 'reservation_infos',
+    tableName: 'room_types',
     underscored: true,
   }
 );
