@@ -13,6 +13,8 @@
     "migration:rollback": "npx sequelize-cli db:migrate:undo",
     "migration:reset": "npx sequelize-cli db:migrate:undo:all",
     "migration:refresh": "npm run migration:reset && npm run migration",
+    "seed:db": "npx sequelize-cli db:seed:all",
+    "seed:rollback": "npx sequelize-cli db:seed:undo:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

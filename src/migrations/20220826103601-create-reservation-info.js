@@ -1,12 +1,12 @@
 'use strict';
 module.exports = { 
   up: async(queryInterface, Sequelize) =>{
-  await queryInterface.createTable('reservation_infos', {
+  await queryInterface.sequelize.query('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";').then(() => queryInterface.createTable('reservation_infos', {
     id: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.DataTypes.UUID,
       allowNull: false,
-      autoIncrement: true,
       primaryKey: true,
+      defaultValue: Sequelize.literal('uuid_generate_v4()')
     },
     reservation_id: {
       type: Sequelize.STRING,
@@ -46,7 +46,7 @@ module.exports = {
       type: Sequelize.DATE,
       defaultValue: Sequelize.NOW()
     }
-  })
+  }))
 },
 down: async (queryInterface, Sequelize) => {
   await queryInterface.dropTable('reservation_infos');
