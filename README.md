@@ -38,5 +38,5 @@ Deployed to - [Heroku](https://overstay-fee-calculator-api.herokuapp.com/)
    
   GET `https://overstay-fee-calculator-api.herokuapp.com/`  
   
-## Developed by:
+## Author:
 Ayomikun Emmanuel  
