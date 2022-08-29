@@ -2,7 +2,7 @@
 
 This API allows you to calaculate overstay fee for a customer.
 
-## :four_leaf_clover: Set up
+## :four_leaf_clover:  Set up
 
 1.  Clone the repo using this link: _https://github.com/Endowmissy/overstay-fees-calculator-api.git_
 2.  cd into the project and run `npm install` to install the modules.
@@ -11,7 +11,7 @@ This API allows you to calaculate overstay fee for a customer.
 5.  Run `npm run migration` and `npm run seed:db` to migrate and seed in data for both dbs.
 6.  Run `npm run dev` to start the development server.
  
-## :sunrise: Technologies Used
+## :sunrise:  Technologies Used
 
 1. Node.js
 2. Express.js
@@ -21,7 +21,7 @@ This API allows you to calaculate overstay fee for a customer.
 6. Git
 
 Deployed to - [Heroku](https://overstay-fee-calculator-api.herokuapp.com/)
-## :cherry_blossom: Sample test format
+## :cherry_blossom:  Sample test format
 
 <h4>1. To calculate customer overstay fee:</h4>
 
@@ -34,9 +34,9 @@ Deployed to - [Heroku](https://overstay-fee-calculator-api.herokuapp.com/)
 }
    ```
 
-<h4>7. To view the welcome page </h4>
+<h4>2. To view the welcome page </h4>
    
   GET `https://overstay-fee-calculator-api.herokuapp.com/`  
   
-## Developed by:
+## Author:
 Ayomikun Emmanuel  
