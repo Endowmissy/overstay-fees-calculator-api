@@ -21,6 +21,9 @@ This API allows you to calaculate overstay fee for a customer.
 6. Git
 
 Deployed to - [Heroku](https://overstay-fee-calculator-api.herokuapp.com/)
+
+API Documentation - [Postman](https://documenter.getpostman.com/view/8491094/VUxKTpZE)
+
 ## :cherry_blossom:  Sample test format
 
 <h4>1. To calculate customer overstay fee:</h4>
