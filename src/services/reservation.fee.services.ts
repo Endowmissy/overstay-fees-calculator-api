@@ -91,7 +91,7 @@ class ReservationInfoService {
             }
         }
         const data = {
-            amount: result.toLocaleString('en-US'),
+            amount: result,
         }
         return data;
     }
