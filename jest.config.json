@@ -1,0 +1,18 @@
+{
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": ["src/**/*.{js,ts}"],
+    "moduleDirectories": ["node_modules", "src"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "modulePathIgnorePatterns": ["<rootDir>/src/migrations", "<rootDir>/node_modules", "<rootDir>/src/seeds"],
+    "testMatch": ["<rootDir>/tests/**"],
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "globalTeardown": "<rootDir>/test-teardown-globals.ts"
+  }
+  

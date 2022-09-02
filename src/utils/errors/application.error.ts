@@ -17,7 +17,7 @@ const { INTERNAL_SERVER_ERROR } = constants;
       * @constructor ApplicationError
       */
     constructor(message?: string, status?: string, statusCode?: number) {
-      super(message)
+      super()
       this.message = message || INTERNAL_SERVER_ERROR;
       this.status = status || 'error';
       this.statusCode = statusCode || 500;
