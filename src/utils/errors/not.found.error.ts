@@ -11,7 +11,7 @@ class NotFoundError extends ApplicationError {
       * @constructor Not Found Error
       */
     constructor(message?: string) {
-        super(message, 'Bad request', 400)
+        super(message, 'Not Found', 404)
     }
 }
 

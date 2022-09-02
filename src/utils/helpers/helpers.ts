@@ -24,10 +24,9 @@ class Helper {
    */
   static errorResponse(req: Request, res: Response, error: any) {
     const accumulateError = { ...serverError, ...error };
-    return res.status(accumulateError.status).json({
+    return res.status(accumulateError.statusCode).json({
       type: FAIL,
       message: accumulateError.message,
-      errors: accumulateError.errors
     });
   }
 
